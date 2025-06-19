@@ -7,9 +7,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/background.jpg') no-repeat center center/cover;
+  background: url('img/background.jpg') no-repeat center center/cover;
   color: white;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -75,12 +78,12 @@ body {
   background: #00bfa0;
 }
 
-/* Main Form Section */
 .main-content {
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 1rem;
+  justify-content: flex-start; /* move to left */
+  align-items: center;         /* vertical center */
+  padding-left: 10%;           /* push form slightly to left */
 }
 
 .form-card {
