@@ -1,56 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="navbar">
-        <div class="left">
-          <img src="img/download.jfif" />
-          <div>Fitness</div>
-        </div>
-        <div class="mid">
-          <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Fitness Calculator</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="right">
-          <button class="btn">Call Us Now</button>
-          <button class="btn">Email Us</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Club</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/download.jfif" alt="Logo" />
+        <span>Fitness</span>
       </div>
-    </header>
-    <div class="container">
-      <h1>Join the best gym of Chandigarh now</h1>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Calculator</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="form-card">
+      <h1>Join the Best Gym in Chandigarh</h1>
       <form action="noaction.php">
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Name" />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Age" />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Gender" />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Locality" />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Email Id" />
-        </div>
-        <div class="form-group">
-          <input type="text" name="" placeholder="Enter your Phone Number" />
-        </div>
-        <button class="btn">Submit</button>
+        <input type="text" placeholder="Your Name" required />
+        <input type="number" placeholder="Your Age" required />
+        <input type="text" placeholder="Your Gender" required />
+        <input type="text" placeholder="Your Locality" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit" class="btn submit-btn">Submit</button>
       </form>
     </div>
-  </body>
+  </main>
+</body>
 </html>
